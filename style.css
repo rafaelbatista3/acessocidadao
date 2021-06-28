@@ -1,0 +1,29 @@
+body{
+	background: #fff;
+}
+
+.row{
+	padding: 10px;
+}
+
+a:link {
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+li{
+	padding-left: 50px;
+}
+i{
+	padding: 10px;
+}
+
+
+.vereador{
+	margin-left: 15px;
+	width: 99px;
+	height: 99px;
+}

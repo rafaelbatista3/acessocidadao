@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="script.js"></script>
+
+  <title>Acesso cidadão</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Acesso Cidadão</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i>Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-toggle="modal" data-target="#login"><i class="bi bi-door-open"></i></i>Entrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-toggle="modal" data-target="#loginModal"><i class="bi bi-person-plus"></i>Criar Conta</a>
+          </li>
+        </ul>
+        <div class="col-sm-6">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquise um PL, Vereador, Assunto..." aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Vereador Álvaro Damiao</h2>
+
+        <div class="row">
+          <div class="col-md-5">
+            <img src="./assets/alvarodamiao.png" alt="foto do vereador" width=250 height=250>
+          </div>
+          <div class="col-md-7">
+            <h2>Sobre o Verador </h2>
+            <p>Nascido em 1970, Álvaro Damião Vieira da Paz é repórter e apresentador da Rádio Itatiaia há cerca de 20 anos. Na TV, apresenta os programas Alterosa Agora e Bola na Área, além de ter passagens pela Record. Em sua carreira jornalística, teve a oportunidade de conhecer de perto as lutas e as demandas das populações humildes, tendo utilizado os microfones para atuar em defesa de seus direitos.</p>
+          </div>
+          <div class="row">
+            <h4>
+              <div>DEM</div>
+              <div>1ºMandato</div>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2>Ultimas atividades</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div><a href="pl.html">PL Lorem ipsum</a></div>
+            <div>Votação: sim</div>
+            <div><a href="pl.html">Ler PL</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div>PL Lorem ipsum</div>
+            <div>Votação: sim</div>
+            <div>Ler PL</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div>PL Lorem ipsum</div>
+            <div>Votação: sim</div>
+            <div>Ler PL</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div>PL Lorem ipsum</div>
+            <div>Votação: sim</div>
+            <div>Ler PL</div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class=col-md-3>
+          <img src="./assets/circle.png" alt="gastos" width=220 height=220>
+        </div>
+        <div class="col-md-3">
+          </br>
+          </br>
+          <h2>Gastos do Vereador</h2>
+          <div>
+            XXX em transportes
+          </div>
+          <div>
+            XXX em saúde
+          </div>
+          <div>
+            XXX em despesas de gabinete
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row text-center">
+      <div class="col-12">
+        <button type="button" align="center" class="btn btn-outline-primary" data-toggle="modal" data-target="#sitemodal">Fazer uma reclamação ou denunciar o vereador</button>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sitemodal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Qual o assunto de seu contato com o vereador X?</label>
+                <textarea class="form-control" id="motivocontato" rows="1" placeholder="Reclamação, sugestão, elogio..."></textarea>
+              </div>
+            </form>
+        <hr>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Descreva aqui o motivo do contato com o vereador x</label>
+                <textarea class="form-control" id="descreversituacao" rows="6"></textarea>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+              <div id="login-column" class="col-md-12">
+                <div id="login-box" class="col-md-12">
+                  <form id="login-form" class="row g-3" method="post" onsubmit="loginUser (this)">
+                    <div class="form-group">
+                      <label for="username">Usuário</label><br>
+                      <input type="text" name="username" id="username" class="form-control">
+                        </div>
+                    <div class="form-group">
+                      <label for="password">Senha</label><br>
+                      <input type="password" name="password" id="password" class="form-control">
+                    </div>
+                    <div class="form-group text-right">
+                      <input type="submit" name="submit" class="btn btn-outline-primary" value="Entrar">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Criar conta</h5>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="login-box" class="col-md-12">
+              <form id="login-form" class="row g-3" method="post" onsubmit="loginUser (this)">
+                <div class="form-group">
+                  <label for="login">Usuário</label><br>
+                  <input type="text" name="txt_login" id="txt_login" class="form-control">
+
+                </div>
+                <div class="form-group">
+                  <label for="nome">Nome completo</label><br>
+                  <input type="text" name="txt_nome" id="txt_nome" class="form-control">
+
+                </div>
+                <div class="form-group">
+                  <label for="email">email</label><br>
+                  <input type="text" name="txt_email" id="txt_email" class="form-control">
+
+                </div>
+                <div class="form-group">
+                  <label for="senha">Senha</label><br>
+                  <input type="password" name="txt_senha" id="txt_senha" class="form-control">
+
+                </div>
+                <div class="form-group">
+                  <label for="senha2">Confirmação de Senha</label><br>
+                  <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
+
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" id="btn_salvar" class="btn btn-outline-primary">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Declara uma função para processar o formulário de login
+      function processaFormLogin(event) {
+        // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+        event.preventDefault();
+
+        // Obtem os dados de login e senha a partir do formulário de login
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+        resultadoLogin = loginUser(username, password);
+        if (resultadoLogin) {
+          window.location.href = 'index.html';
+        } else { // Se login falhou, avisa ao usuário
+          alert('Usuário ou senha incorretos');
+        }
+      }
+
+      function salvaLogin(event) {
+        // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+        event.preventDefault();
+
+        // Obtem os dados do formulário
+        let login = document.getElementById('txt_login').value;
+        let nome = document.getElementById('txt_nome').value;
+        let email = document.getElementById('txt_email').value;
+        let senha = document.getElementById('txt_senha').value;
+        let senha2 = document.getElementById('txt_senha2').value;
+        if (senha != senha2) {
+          alert('As senhas informadas não conferem.');
+          return
+        }
+
+        // Adiciona o usuário no banco de dados
+        addUser(nome, login, senha, email);
+        alert('Usuário salvo com sucesso. Proceda com o login para ');
+
+        // Oculta a div modal do login
+        //document.getElementById ('loginModal').style.display = 'none';
+        $('#loginModal').modal('hide');
+      }
+
+      // Associa a funçao processaFormLogin  formulário adicionado um manipulador do evento submit
+      document.getElementById('login-form').addEventListener('submit', processaFormLogin);
+
+
+      // Associar salvamento ao botao
+      document.getElementById('btn_salvar').addEventListener('click', salvaLogin);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
