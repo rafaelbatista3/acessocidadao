@@ -1,2 +1,0 @@
-# acessocidadao
-Projeto PUC
